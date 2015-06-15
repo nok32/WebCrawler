@@ -20,7 +20,7 @@ namespace WebCrawler
             Recurce(url, crab, 0, APattern, dbootomOfRecurce);
             Console.WriteLine("We found {0} links in this Web site", crab.Links.Count);
 
-            Console.WriteLine("Please enter the word, for they you want to see link:");
+            Console.WriteLine("Please enter the word, for which you want to see link:");
             string wordPattern = Console.ReadLine();
             bool succsess = false;
             Parallel.ForEach(crab.Links, link =>
@@ -38,7 +38,7 @@ namespace WebCrawler
             });
             if (succsess == false)
             {
-                Console.WriteLine("Sorry, we dont found some link");
+                Console.WriteLine("Sorry, we dont found links, which contain the word: {0}", wordPattern);
             }
         }
 
