@@ -11,7 +11,7 @@ namespace WebCrawler
 		{
 			Console.WriteLine("Please enter site URL:");
 			string url = "http://www." + Console.ReadLine();
-			Console.WriteLine("Please enter how deeply recource you want to do:");
+			Console.WriteLine("Please enter how deeply recourse you want to do:");
 			int dbootomOfRecurce = int.Parse(Console.ReadLine());
 
 			Crawler crab = new Crawler(url);
@@ -39,7 +39,7 @@ namespace WebCrawler
          			});
 			if (succsess == false)
 			{
-				Console.WriteLine("Sorry, we dont found links, which contain the word: {0}", wordPattern);
+				Console.WriteLine("Sorry, we don't found links, which contain the word: {0}", wordPattern);
 			}
 			Console.WriteLine("Please enter some key to end the program!");
         }
