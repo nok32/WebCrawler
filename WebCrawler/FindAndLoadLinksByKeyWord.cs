@@ -41,7 +41,6 @@ namespace WebCrawler
 			{
 				Console.WriteLine("Sorry, we don't found links, which contain the word: {0}", wordPattern);
 			}
-			Console.WriteLine("Please enter some key to end the program!");
         }
 
         public static void Recurce(string url, Crawler crab, int level, string pattern, int bootomOfRecurse)
